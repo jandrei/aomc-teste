@@ -23,13 +23,13 @@ page-home {
 
   #telaInicial, #telaInicial button{
     background-color: #009fe3;
-    -webkit-box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.75);
-    box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.45);
+    -moz-box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.45);
+    box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.45);
   }
 
-  #telaInicial button{
-    height: 170px;
+  #telaInicial ion-label{
+    line-height: 100%;
   }
 
   #telaInicial .botao-altura-menor, #telaInicial .linha-menor{
@@ -37,11 +37,17 @@ page-home {
   }
 
   #telaInicial .linha-menor img{
-    width: 15%;
+    width: 14%;
     position: absolute;
     left: 10px;
     top: 50%;
     margin-top: -6%;
   }
-
+  #telaInicial .linha-menor ion-label{
+    position: absolute;
+    left: 35px;
+    top: 50%;
+    margin-top: -3%;
+    line-height: 100%;
+  }
 }

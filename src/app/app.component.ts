@@ -13,7 +13,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ]
 })
 export class MyApp {
-  rootPage:any = HomePage;
+  rootPage:any = null;
 
   constructor(
     platform: Platform,
@@ -23,11 +23,13 @@ export class MyApp {
   ) {
     platform.ready().then(() => {
       let config = configProvider.getConfigData();
-
-      if (!config.showSlide){
+      let forca = false;
+      if (!config.showSlide || forca){
         this.rootPage = IntroPage;
         config.showSlide = true;
         configProvider.setConfigData(config);
+      }else{
+        this.rootPage = HomePage;
       }
 
       // Okay, so the platform is ready and our plugins are available.
