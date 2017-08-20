@@ -1,3 +1,7 @@
+import { IntroPageModule } from './../pages/intro/intro.module';
+import { SegundaViaDetalhePageModule } from './../pages/segunda-via-detalhe/segunda-via-detalhe.module';
+import { SegundaViaListaPageModule } from './../pages/segunda-via-lista/segunda-via-lista.module';
+import { SegundaViaPageModule } from './../pages/segunda-via/segunda-via.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -6,6 +10,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import { ConfigProvider } from '../providers/config/config';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,11 @@ import { HomePage } from '../pages/home/home';
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    SegundaViaPageModule,
+    SegundaViaListaPageModule,
+    SegundaViaDetalhePageModule,
+    IntroPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -24,7 +33,8 @@ import { HomePage } from '../pages/home/home';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    ConfigProvider,
   ]
 })
 export class AppModule {}

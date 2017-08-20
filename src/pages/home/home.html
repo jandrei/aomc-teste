@@ -1,14 +1,86 @@
-<ion-header>
+<!-- <ion-header>
   <ion-navbar>
     <ion-title>
       Ionic Blank
     </ion-title>
   </ion-navbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<ion-content id="telaInicial">
+  <div class="corpo-logo-tela-inicial">
+    <img src="assets/images/corsan_logo_white.svg" class="logo">
+  </div>
+
+
+    <ion-grid class="corpo-botao-tela-inicial">
+      <ion-row>
+        <ion-col col-6>
+          <button  (click)="segundaVia()" class="col button">
+            <!-- <i class="div-icone icon ion-checkmark-round"></i> -->
+            <div class="div-icone">
+              <img class="imagem" src="assets/images/segunda-via.svg" />
+            </div>
+            <ion-label>
+              SEGUNDA VIA
+            </ion-label>
+          </button>
+        </ion-col>
+        <ion-col col-6>
+          <button  ui-sref="faltaDeAgua" class="col button">
+            <div class="div-icone">
+              <img class="imagem"  src="assets/images/falta-de-agua.svg" />
+            </div>
+            <ion-label>
+              FALTA DE ÁGUA
+            </ion-label>
+          </button>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col col-6>
+          <button  ui-sref="vazamentoDeAguaEsgoto" class="col button">
+            <img class="imagem"  src="assets/images/vazamento.svg" />
+            <ion-label>
+              VAZAMENTO<br/>
+              ÁGUA OU ESGOTO
+            </ion-label>
+          </button>
+        </ion-col>
+        <ion-col col-6>
+          <button  ui-sref="telaMinhaCorsan" class="col button">
+            <img class="imagem"  src="assets/images/minha-corsan.svg" />
+            <ion-label>
+              MINHA CORSAN
+            </ion-label>
+          </button>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="linha-menor">
+        <ion-col col-6>
+          <button  ng-click="abrirFaleConosco()" class="col button botao-altura-menor">
+            <img  src="assets/images/fale-conosco.svg">
+            <ion-label>
+              FALE CONOSCO
+            </ion-label>
+
+          </button>
+        </ion-col>
+        <ion-col col-6>
+          <button  ng-click="ligarCorsan()" class="col button botao-altura-menor">
+
+            <img  src="assets/images/0800.svg">
+            <ion-label>
+              0800 646 6444
+            </ion-label>
+
+          </button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
 </ion-content>

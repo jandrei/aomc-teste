@@ -1,3 +1,47 @@
 page-home {
+  #telaInicial .corpo-logo-tela-inicial{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 20px;
+  }
+
+  #telaInicial .corpo-logo-tela-inicial img{
+    color: #fff;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #009fe3;
+
+  }
+
+  #telaInicial .corpo-botao-tela-inicial{
+    position: fixed;
+    bottom: 20px;
+    width: 100%;
+  }
+
+  #telaInicial, #telaInicial button{
+    background-color: #009fe3;
+    -webkit-box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.75);
+    box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.75);
+  }
+
+  #telaInicial button{
+    height: 170px;
+  }
+
+  #telaInicial .botao-altura-menor, #telaInicial .linha-menor{
+    height: 50px;
+  }
+
+  #telaInicial .linha-menor img{
+    width: 15%;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin-top: -6%;
+  }
 
 }
