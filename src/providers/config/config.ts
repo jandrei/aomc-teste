@@ -17,6 +17,12 @@ export class ConfigProvider {
     }
   }
 
+  defineShowSlideTrue(){
+    let c = this.getConfigData();
+    c.showSlide = true;
+    this.setConfigData(c);
+  }
+
   getConfigData(): any {
     return JSON.parse(localStorage.getItem("config"));
   }

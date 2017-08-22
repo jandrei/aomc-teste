@@ -14,5 +14,15 @@
 
 
 <ion-content padding>
-  <button ion-button (click)="segundaViaLista()">Ir Para Lista</button>
+  <!-- <button ion-button (click)="segundaViaLista()">Ir Para Lista</button>  -->
+  <p>Para utilizar os serviços de autoatendimento, tenha em mãos o código do imóvel impresso em sua conta de água.</p>
+
+  <ion-label>Insira o código do imóvel</ion-label>
+  <ion-input type="number"></ion-input>
+
+  <button class="botoesTela" ion-button (click)="segundaViaLista()">
+    <ion-icon name="md-checkmark"></ion-icon>
+    <div style="width: 90%;">CONSULTAR</div>
+  </button>
+
 </ion-content>

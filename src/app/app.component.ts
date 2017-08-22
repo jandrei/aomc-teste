@@ -1,3 +1,4 @@
+import { SegundaViaDetalhePage } from './../pages/segunda-via-detalhe/segunda-via-detalhe';
 import { HomePage } from './../pages/home/home';
 import { ConfigProvider } from './../providers/config/config';
 import { IntroPage } from './../pages/intro/intro';
@@ -26,8 +27,7 @@ export class MyApp {
       let forca = false;
       if (!config.showSlide || forca){
         this.rootPage = IntroPage;
-        config.showSlide = true;
-        configProvider.setConfigData(config);
+        configProvider.defineShowSlideTrue();
       }else{
         this.rootPage = HomePage;
       }

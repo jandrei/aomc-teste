@@ -5,14 +5,14 @@ page-home {
     padding-right: 50px;
     padding-bottom: 20px;
   }
+ #telaInicial .corpo-logo-tela-inicial{
+    background-color: $corAzul;
+  }
 
   #telaInicial .corpo-logo-tela-inicial img{
     color: #fff;
     width: 100%;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #009fe3;
-
+    height: 100%;
   }
 
   #telaInicial .corpo-botao-tela-inicial{
@@ -20,12 +20,16 @@ page-home {
     bottom: 20px;
     width: 100%;
   }
+  #telaInicial .corpo-botao-tela-inicial img{
+    width: 50%;
+    max-height: 100%;
+  }
 
   #telaInicial, #telaInicial button{
-    background-color: #009fe3;
-    -webkit-box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.45);
-    -moz-box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.45);
-    box-shadow: 5px 3px 16px -1px rgba(0,0,0,0.45);
+    background-color: $corAzul;
+    -webkit-box-shadow: 2px 2px 5px rgba(0,0,0,0.45);
+    -moz-box-shadow: 2px 2px 5px rgba(0,0,0,0.45);
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.45);
   }
 
   #telaInicial ion-label{
@@ -45,7 +49,7 @@ page-home {
   }
   #telaInicial .linha-menor ion-label{
     position: absolute;
-    left: 35px;
+    left: 40px;
     top: 50%;
     margin-top: -3%;
     line-height: 100%;

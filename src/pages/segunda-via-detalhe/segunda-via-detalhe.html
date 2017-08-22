@@ -7,12 +7,39 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>segundaViaDetalhe detalhe do item da lista</ion-title>
+    <ion-title>Detalhe</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-  <button ion-button (click)="voltaParaHome();"> voltar para home</button>
+
+  <ion-label class="label-resultado">Código do Imóvel</ion-label>
+  <p>&nbsp;3304043</p>
+
+  <ion-label class="label-resultado">Endereço</ion-label>
+  <p>&nbsp;Meio do mato em algum lugar, 12312</p>
+
+  <ion-label class="label-resultado">Valor</ion-label>
+  <p>&nbsp;R$ 200,44</p>
+
+  <ion-label class="label-resultado">Vencimento</ion-label>
+  <p>&nbsp;10/12/2010</p>
+
+  <hr>
+  <ion-label class="label-resultado">Código do Imóvel</ion-label>
+  <p>&nbsp;<a href="#">3304043.3304043.3304043.3304043</a></p>
+  <ion-grid>
+    <ion-row>
+      <ion-col class="col1">
+        <button ion-button class="botoesTela"><ion-icon name="share"></ion-icon> &nbsp; Compartilhar</button>
+      </ion-col>
+      <ion-col class="col2">
+        <button ion-button class="botoesTela"><ion-icon name="copy"></ion-icon> &nbsp; Copiar</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <button ion-button class="botoesTela" (click)="voltaParaHome();">Ir para Tela Inicial</button>
 </ion-content>

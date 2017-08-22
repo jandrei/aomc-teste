@@ -1,3 +1,4 @@
+import { MyApp } from './../../app/app.component';
 import { HomePage } from '../home/home';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
@@ -16,7 +17,9 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class IntroPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,
+    public navParams: NavParams,
+    private myApp: MyApp ) {
   }
 
   ionViewDidLoad() {
@@ -24,6 +27,9 @@ export class IntroPage {
   }
 
   pularApresentacao() {
+    //redefinindo rootpage para que quando mostrar o slide e
+    //depois tentar voltar para o root ele volte para o lugar certo
+    this.myApp.rootPage = HomePage;
     this.navCtrl.push(HomePage);
   }
 
