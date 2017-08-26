@@ -1,3 +1,5 @@
+import { ModalListaMunicipioModule } from './../pages/modal-lista-municipio/modal-lista-municipio.module';
+import { FaltaDeAguaPageModule } from './../pages/falta-de-agua/falta-de-agua.module';
 import { IntroPageModule } from './../pages/intro/intro.module';
 import { SegundaViaDetalhePageModule } from './../pages/segunda-via-detalhe/segunda-via-detalhe.module';
 import { SegundaViaListaPageModule } from './../pages/segunda-via-lista/segunda-via-lista.module';
@@ -23,7 +25,9 @@ import { ConfigProvider } from '../providers/config/config';
     SegundaViaPageModule,
     SegundaViaListaPageModule,
     SegundaViaDetalhePageModule,
-    IntroPageModule
+    FaltaDeAguaPageModule,
+    IntroPageModule,
+    ModalListaMunicipioModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

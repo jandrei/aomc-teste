@@ -1,0 +1,34 @@
+<!--
+  Generated template for the FaltaDeAguaPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>falta-de-agua</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <!-- <button ion-button (click)="segundaViaLista()">Ir Para Lista</button>  -->
+  <p>Verificar situação do abastecimento de aguá.</p>
+
+  <ion-label>Pesquise a cidade</ion-label>
+  <ion-input readonly
+    (tap)="abreModalSelecionaMunicipio()"
+    type="number"
+
+    placeholder="Digite a cidade..."></ion-input>
+
+  <p class="left-text">Atualmente, não há registro de desabastecimento neste local. Ligue para 0800 646 6444 para maiores informações.</p>
+
+  <button class="botoesTela" ion-button (click)="consultarSituacaoAbastecimento()">
+    <ion-icon name="md-checkmark"></ion-icon>
+    <div style="width: 90%;">CONSULTAR</div>
+  </button>
+
+</ion-content>

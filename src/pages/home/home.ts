@@ -1,4 +1,4 @@
-
+import { FaltaDeAguaPage } from './../falta-de-agua/falta-de-agua';
 import { SegundaViaPage } from './../segunda-via/segunda-via';
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
@@ -15,8 +15,12 @@ export class HomePage {
 
   }
 
-  segundaVia(){
+  segundaVia() {
     this.navCtrl.push(SegundaViaPage);
+  }
+
+  faltaDeAgua() {
+    this.navCtrl.push(FaltaDeAguaPage);
   }
 
 }
