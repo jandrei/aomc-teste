@@ -15,14 +15,8 @@
 
 <ion-content padding>
   <!-- <button ion-button (click)="segundaViaLista()">Ir Para Lista</button>  -->
-  <p>Verificar situação do abastecimento de aguá.</p>
-
-  <ion-label>Pesquise a cidade</ion-label>
-  <ion-input readonly
-    (tap)="abreModalSelecionaMunicipio()"
-    type="number"
-
-    placeholder="Digite a cidade..."></ion-input>
+  <ion-label>Situação do abastecimento de água:</ion-label>
+  <ion-input readonly (tap)="abreModalSelecionaMunicipio()" type="number" placeholder="Digite a cidade..."></ion-input>
 
   <p class="left-text">Atualmente, não há registro de desabastecimento neste local. Ligue para 0800 646 6444 para maiores informações.</p>
 
@@ -31,4 +25,13 @@
     <div style="width: 90%;">CONSULTAR</div>
   </button>
 
+  <div *ngIf="areaBotaoInformarFaltaDeAguaHabilitado">
+    <hr>
+    <p class="center-text">Caso não conste informações de desabastecmento para o seu bairro, avise a CORSAN.</p>
+
+    <button class="botoesTela" ion-button (click)="vaiTelaInformarFaltaDeAgua()">
+      <ion-icon name="md-alert"></ion-icon>
+      <div style="width: 90%;">INFORMAR FALTA DE ÁGUA</div>
+    </button>
+  </div>
 </ion-content>

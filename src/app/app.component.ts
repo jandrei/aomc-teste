@@ -1,3 +1,4 @@
+import { InformarFaltaDeAguaPage } from './../pages/informar-falta-de-agua/informar-falta-de-agua';
 import { FaltaDeAguaPage } from './../pages/falta-de-agua/falta-de-agua';
 import { SegundaViaDetalhePage } from './../pages/segunda-via-detalhe/segunda-via-detalhe';
 import { HomePage } from './../pages/home/home';
@@ -30,7 +31,7 @@ export class MyApp {
         this.rootPage = IntroPage;
         configProvider.defineShowSlideTrue();
       }else{
-        this.rootPage = FaltaDeAguaPage;
+        this.rootPage = HomePage;
       }
 
       // Okay, so the platform is ready and our plugins are available.

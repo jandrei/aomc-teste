@@ -1,24 +1,27 @@
 <ion-header>
-    <ion-toolbar>
-      <ion-title>
-        Description
-      </ion-title>
-      <ion-buttons start>
-        <button ion-button (click)="dismiss()">
+  <ion-toolbar>
+    <ion-title>
+      Description
+    </ion-title>
+    <ion-buttons start>
+      <button ion-button (click)="dismiss()">
           <span ion-text color="primary" showWhen="ios">Cancel</span>
           <ion-icon name="md-close" showWhen="android, windows"></ion-icon>
         </button>
-      </ion-buttons>
-    </ion-toolbar>
-  </ion-header>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
 
-  <ion-content>
-    <ion-list>
-        <ion-item *ngFor="let item of municipios" (click)="dismiss(item)">
-          {{item.codigo}}
-          <ion-note item-end>
-            {{item.descricao}}
-          </ion-note>
+<ion-content>
+  <ion-list>
+      <ion-item>
+          <ion-input placeholder="Filtre a cidade aqui.."></ion-input>
         </ion-item>
-    </ion-list>
-  </ion-content>
+    <ion-item *ngFor="let item of municipios" (click)="dismiss(item)">
+      {{item.codigo}}
+      <ion-note item-start style="color: #000;">
+        {{item.descricao}}
+      </ion-note>
+    </ion-item>
+  </ion-list>
+</ion-content>

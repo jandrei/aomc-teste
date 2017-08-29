@@ -1,6 +1,7 @@
 // http://ionicframework.com/docs/theming/
 
   $corAzul: #009fe3;
+  $corBranco: #fff;
 
   button,ion-label,p{
     color: #fff;
@@ -60,3 +61,16 @@
   ion-input.input{
     background-color: #fff;
   }
+
+  textarea.text-input.text-input-md{
+    background-color: #fff;
+    padding: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  item-md{
+    margin: 1px;
+  }
+

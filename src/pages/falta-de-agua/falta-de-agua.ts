@@ -1,3 +1,4 @@
+import { InformarFaltaDeAguaPage } from './../informar-falta-de-agua/informar-falta-de-agua';
 import { ModalListaMunicipio } from './../modal-lista-municipio/modal-lista-municipio';
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ModalController } from 'ionic-angular';
@@ -21,10 +22,10 @@ export class FaltaDeAguaPage {
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    public modalCtrl: ModalController) {
+    public modalCtrl: ModalController
+  ) {
 
   }
-
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad FaltaDeAguaPage');
@@ -33,7 +34,7 @@ export class FaltaDeAguaPage {
   abreModalSelecionaMunicipio() {
     let modal = this.modalCtrl.create(ModalListaMunicipio);
     modal.onDidDismiss(data => {
-      console.log("data"+data.descricao)
+      console.log("data"+data)
     });
     modal.present();
   }
@@ -43,12 +44,13 @@ export class FaltaDeAguaPage {
   }
 
   vaiTelaInformarFaltaDeAgua() {
-
+    this.navCtrl.push(InformarFaltaDeAguaPage);
   }
 
   escondeAreaBotaoInformarFaltaDeAguaHabilitado() {
     this.areaBotaoInformarFaltaDeAguaHabilitado = false;
   }
+
   mostraAreaBotaoInformarFaltaDeAguaHabilitado() {
     this.areaBotaoInformarFaltaDeAguaHabilitado = true;
   }
