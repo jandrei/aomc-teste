@@ -1,3 +1,4 @@
+import { VazamentoPageModule } from './../pages/vazamento/vazamento.module';
 import { InformarFaltaDeAguaPageModule } from './../pages/informar-falta-de-agua/informar-falta-de-agua.module';
 import { ModalListaMunicipioModule } from './../pages/modal-lista-municipio/modal-lista-municipio.module';
 import { FaltaDeAguaPageModule } from './../pages/falta-de-agua/falta-de-agua.module';
@@ -29,7 +30,8 @@ import { ConfigProvider } from '../providers/config/config';
     FaltaDeAguaPageModule,
     IntroPageModule,
     ModalListaMunicipioModule,
-    InformarFaltaDeAguaPageModule
+    InformarFaltaDeAguaPageModule,
+    VazamentoPageModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [

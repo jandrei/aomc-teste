@@ -14,9 +14,9 @@
 
 <ion-content>
   <ion-list>
-      <ion-item>
-          <ion-input placeholder="Filtre a cidade aqui.."></ion-input>
-        </ion-item>
+    <ion-item>
+      <ion-input placeholder="Filtre a cidade aqui.."></ion-input>
+    </ion-item>
     <ion-item *ngFor="let item of municipios" (click)="dismiss(item)">
       {{item.codigo}}
       <ion-note item-start style="color: #000;">

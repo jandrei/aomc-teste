@@ -1,3 +1,4 @@
+import { VazamentoPage } from './../vazamento/vazamento';
 import { FaltaDeAguaPage } from './../falta-de-agua/falta-de-agua';
 import { SegundaViaPage } from './../segunda-via/segunda-via';
 import { Component } from '@angular/core';
@@ -21,6 +22,10 @@ export class HomePage {
 
   faltaDeAgua() {
     this.navCtrl.push(FaltaDeAguaPage);
+  }
+
+  vazamento() {
+    this.navCtrl.push(VazamentoPage);
   }
 
 }
